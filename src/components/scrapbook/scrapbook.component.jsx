@@ -15,7 +15,7 @@ class Scrapbook extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Scarpbook</h1>
+				<h1>scrapbook</h1>
 				<div className='scrapbook'>
 					<FlipPage
 						className='flipbook'
