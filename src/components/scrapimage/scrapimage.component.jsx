@@ -1,27 +1,28 @@
-import React, { Component } from 'react'
-import { Image } from 'react-konva'
+import React from "react";
+import { Image } from "react-konva";
+import useImage from "use-image";
 
-export default class ScrapImage extends Component {
-	constructor(props){
-		super(props);
-		this.state = {
-			image: null,
-		}
-	}
+const ScrapImage = ({
+	imageUrl,
+	posX,
+	posY,
+	rotation,
+	scaleX,
+	scaleY
+}) => {
+	const [image] = useImage(imageUrl);
+	return (
+		<Image
+			image={image}
+			x={posX}
+			y={posY}
+			rotation={rotation}
+			scaleX={scaleX}
+			scaleY={scaleY}
+			offsetX={image ? image.width / 2 : 0}
+			offsetY={image ? image.height / 2 : 0}
+		/>
+	);
+};
 
-	componentDidMount(){
-		const image = new window.Image();
-		image.src = this.props.imageUrl;
-		image.onload = () => {
-			this.setState({
-				image: image,
-			})
-		}
-	}
-
-	render() {
-		return (
-			<Image image={this.state.image} />
-		)
-	}
-}
+export default ScrapImage;

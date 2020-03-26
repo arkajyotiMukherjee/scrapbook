@@ -4,6 +4,7 @@ import FlipPage from "react-flip-page";
 import "./scrapbook.styles.scss";
 import ScrapPage from "../scrappage/scrappage.component";
 import ScrapImage from "../scrapimage/scrapimage.component";
+import { Text } from "react-konva";
 
 class Scrapbook extends Component {
 	constructor(props) {
@@ -25,18 +26,14 @@ class Scrapbook extends Component {
 					>
 						<ScrapPage width={this.width} height={this.height}>
 							<ScrapImage
-								imageUrl={`http://unsplash.it/${this.width}/${this.height}/?space,sky`}
+								imageUrl={`http://unsplash.it/260/160/?rain`}
+								posX={150}
+								posY={150}
+								rotation={-30}
+								scaleX={1}
+								scaleY={1}
 							/>
-						</ScrapPage>
-						<ScrapPage width={this.width} height={this.height}>
-							<ScrapImage
-								imageUrl={`http://unsplash.it/${this.width}/${this.height}/?nature,forest`}
-							/>
-						</ScrapPage>
-						<ScrapPage width={this.width} height={this.height}>
-							<ScrapImage
-								imageUrl={`http://unsplash.it/${this.width}/${this.height}/?rain`}
-							/>
+							<Text text='from Boo' x={360} y={80}/>
 						</ScrapPage>
 					</FlipPage>
 				</div>
