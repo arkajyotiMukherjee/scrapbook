@@ -33,7 +33,29 @@ class Scrapbook extends Component {
 								scaleX={1}
 								scaleY={1}
 							/>
-							<Text text='from Boo' x={360} y={80}/>
+							<Text text='Hello' x={360} y={80}/>
+						</ScrapPage>
+						<ScrapPage width={this.width} height={this.height}>
+							<ScrapImage
+								imageUrl={`http://unsplash.it/360/260/?rain,snow`}
+								posX={150}
+								posY={150}
+								rotation={-30}
+								scaleX={1.2}
+								scaleY={1.2}
+							/>
+							<Text text='World' x={460} y={180}/>
+						</ScrapPage>
+						<ScrapPage width={this.width} height={this.height}>
+							<ScrapImage
+								imageUrl={`http://unsplash.it/480/360/?space`}
+								posX={150}
+								posY={150}
+								rotation={0}
+								scaleX={1}
+								scaleY={1}
+							/>
+							<Text text="It's me ya boiii !" x={360} y={380}/>
 						</ScrapPage>
 					</FlipPage>
 				</div>
