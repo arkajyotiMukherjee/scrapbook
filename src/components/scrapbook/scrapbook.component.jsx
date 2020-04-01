@@ -169,8 +169,9 @@ with a lot of bad selfies 🤳🏼\n`,
 					texts: [
 						{
 							id: 1,
-							text: `That one afternoon snowballed into a lot of happy memories\n
-and amazing moments that I'll always cherish in my heart ❤️`,
+							text: `That one afternoon snowballed into a lot of happy\n
+memories and amazing moments that I'll always cherish\n
+in my heart ❤️`,
 							posX: 10,
 							posY: 10
 						}
@@ -182,7 +183,7 @@ and amazing moments that I'll always cherish in my heart ❤️`,
 						{
 							id: 1,
 							image: imagePath(4)+'jpg',
-							posX: 180,
+							posX: 170,
 							posY: 180,
 							rotation: 0,
 							scaleX: 0.07,
@@ -191,7 +192,7 @@ and amazing moments that I'll always cherish in my heart ❤️`,
 						{
 							id: 2,
 							image: imagePath(12)+'jpg',
-							posX: -20,
+							posX: -30,
 							posY: 70,
 							rotation: -10,
 							scaleX: 0.2,
