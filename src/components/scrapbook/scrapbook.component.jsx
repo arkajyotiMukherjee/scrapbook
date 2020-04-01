@@ -5,7 +5,6 @@ import ScrapPage from "../scrappage/scrappage.component";
 import ScrapImage from "../scrapimage/scrapimage.component";
 import { Text } from "react-konva";
 import Fullscreen from "react-full-screen";
-import imageLoader from "../../utils/images";
 import FullscreenButton from "@material-ui/icons/Fullscreen";
 
 function isMobileDevice() {
@@ -15,23 +14,83 @@ function isMobileDevice() {
 	);
 }
 
+const imagePath = index => `/assets/img${index}.`;
+
 class Scrapbook extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			isFull: false,
-			images: []
+			pages: [
+				{
+					pageNo: 1,
+					images: [
+						{
+							id: 1,
+							image: imagePath(1)+'png',
+							posX: 150,
+							posY: 250,
+							rotation: -30,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+						{
+							id: 2,
+							image: imagePath(2)+'png',
+							posX: 150,
+							posY: 350,
+							rotation: -30,
+							scaleX: 0.1,
+							scaleY: 0.1
+						}
+					],
+					texts: [
+						{
+							id: 1,
+							text: "Hello",
+							posX: 100,
+							posY: 200
+						}
+					]
+				},
+				{
+					pageNo: 2,
+					images: [
+						{
+							id: 3,
+							image: imagePath(3)+'jpg',
+							posX: 150,
+							posY: 150,
+							rotation: -30,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+						{
+							id: 4,
+							image: imagePath(4)+'jpg',
+							posX: 150,
+							posY: 250,
+							rotation: -30,
+							scaleX: 0.1,
+							scaleY: 0.1
+						}
+					],
+					texts: [
+						{
+							id: 1,
+							text: "World",
+							posX: 100,
+							posY: 200
+						}
+					]
+				}
+			]
 		};
 	}
 
-	componentDidMount() {
-		const images = imageLoader();
-		this.setState({ images });
-	}
-
 	goFull = () => {
-    this.setState({ isFull: true });
-  }
+		this.setState({ isFull: true });
+	};
 
 	render() {
 		const paddingHorizontal = 32;
@@ -72,18 +131,28 @@ class Scrapbook extends Component {
 								padding: 0
 							}}
 						>
-							<ScrapPage width={width} height={height}>
-								<ScrapImage
-									imageUrl={`http://unsplash.it/260/160/?rain`}
-									posX={150}
-									posY={150}
-									rotation={-30}
-									scaleX={1}
-									scaleY={1}
-								/>
-								<Text text='Hello' x={360} y={80} />
-							</ScrapPage>
-							<ScrapPage width={width} height={height}>
+							{this.state.pages.map(({ pageNo, images, texts }) => (
+								<ScrapPage key={pageNo} width={width} height={height}>
+									{images.map(
+										({ id, image, posX, posY, rotation, scaleX, scaleY }) => (
+											<ScrapImage
+												key={id}
+												imageUrl={image}
+												posX={posX}
+												posY={posY}
+												rotation={rotation}
+												scaleX={scaleX}
+												scaleY={scaleY}
+											/>
+										)
+									)}
+
+									{texts.map(({ id, text, posX, posY }) => (
+										<Text key={id} text={text} x={posX} y={posY} />
+									))}
+								</ScrapPage>
+							))}
+							{/* <ScrapPage width={width} height={height}>
 								<ScrapImage
 									imageUrl={`http://unsplash.it/360/260/?rain,snow`}
 									posX={150}
@@ -104,7 +173,7 @@ class Scrapbook extends Component {
 									scaleY={1}
 								/>
 								<Text text="It's me ya boiii !" x={360} y={380} />
-							</ScrapPage>
+							</ScrapPage> */}
 						</FlipPage>
 					</div>
 				</Fullscreen>

@@ -28,7 +28,7 @@ class ScrapBookList extends Component {
 			<div>
 				<h1>ScrapBookList</h1>
 				{this.state.books.map(({ id, bookname, linkUrl }) => (
-					<Card className='book'>
+					<Card key={id} className='book'>
 						<CardContent>
 							<Typography
 								color='textSecondary'
