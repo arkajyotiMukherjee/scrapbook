@@ -36,6 +36,15 @@ class Scrapbook extends Component {
 						},
 						{
 							id: 2,
+							image: imagePath(11)+'png',
+							posX: 210,
+							posY: 40,
+							rotation: 0,
+							scaleX: 0.03,
+							scaleY: 0.03
+						},
+						{
+							id: 3,
 							image: imagePath(21)+'jpg',
 							posX: 170,
 							posY: 460,
@@ -287,20 +296,29 @@ my Happy Potter wand 🧙`,
 						{
 							id: 1,
 							image: imagePath(19)+'jpg',
-							posX: 50,
+							posX: 10,
 							posY: 80,
 							rotation: 0,
 							scaleX: 0.07,
 							scaleY: 0.07
 						},
 						{
-							id: 3,
+							id: 2,
 							image: imagePath(3)+'jpg',
 							posX: 10,
 							posY: 400,
 							rotation: 0,
 							scaleX: 0.07,
 							scaleY: 0.07
+						},
+						{
+							id: 3,
+							image: imagePath(24)+'png',
+							posX: 210,
+							posY: 40,
+							rotation: 0,
+							scaleX: 0.03,
+							scaleY: 0.03
 						},
 					],
 					texts: [
@@ -377,13 +395,31 @@ very important`,
 							scaleY: 0.06
 						},
 						{
-							id: 4,
+							id: 2,
 							image: imagePath(33)+'jpg',
 							posX: 320,
 							posY: 600,
 							rotation: 180,
 							scaleX: 0.1,
 							scaleY: 0.1
+						},
+						{
+							id: 3,
+							image: imagePath(29)+'png',
+							posX: 220,
+							posY: 280,
+							rotation: 0,
+							scaleX: 0.03,
+							scaleY: 0.03
+						},
+						{
+							id: 4,
+							image: imagePath(18)+'png',
+							posX: 5,
+							posY: 520,
+							rotation: 0,
+							scaleX: 0.03,
+							scaleY: 0.03
 						},
 					],
 					texts: [
@@ -425,13 +461,22 @@ because food is important 😐`,
 							scaleY: 0.25
 						},
 						{
-							id: 4,
+							id: 3,
 							image: imagePath(6)+'jpg',
 							posX: 10,
 							posY: 420,
 							rotation: 0,
 							scaleX: 0.25,
 							scaleY: 0.25
+						},
+						{
+							id: 4,
+							image: imagePath(2)+'png',
+							posX: 215,
+							posY: 40,
+							rotation: 0,
+							scaleX: 0.03,
+							scaleY: 0.03
 						},
 					],
 					texts: [
@@ -447,6 +492,12 @@ because food is important 😐`,
 poet girlfriend 😚❤️`,
 							posX: 10,
 							posY: 370
+						},
+						{
+							id: 3,
+							text: `"I'm not little"`,
+							posX: 240,
+							posY: 150
 						},
 					]
 				},
