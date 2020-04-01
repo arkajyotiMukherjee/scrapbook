@@ -27,19 +27,19 @@ class Scrapbook extends Component {
 					images: [
 						{
 							id: 1,
-							image: imagePath(1)+'png',
-							posX: 150,
-							posY: 250,
-							rotation: -30,
-							scaleX: 0.1,
-							scaleY: 0.1
+							image: imagePath(28)+'jpg',
+							posX: 185,
+							posY: 180,
+							rotation: 30,
+							scaleX: 0.05,
+							scaleY: 0.05
 						},
 						{
 							id: 2,
-							image: imagePath(2)+'png',
-							posX: 150,
-							posY: 350,
-							rotation: -30,
+							image: imagePath(21)+'jpg',
+							posX: 170,
+							posY: 460,
+							rotation: 0,
 							scaleX: 0.1,
 							scaleY: 0.1
 						}
@@ -47,9 +47,32 @@ class Scrapbook extends Component {
 					texts: [
 						{
 							id: 1,
-							text: "Hello",
-							posX: 100,
-							posY: 200
+							text: `Hilo Pui,\n
+							Happy Birthday to you :| <3\n
+							I make very shitty website\n
+							for your birthday.\n
+							I wanted you to have a\n
+							glympse of our journey\n
+							together. Forgive bad englis\n
+							and crude writing style 😐\n
+							Let's start...`,
+							posX: 10,
+							posY: 20
+						},
+						{
+							id: 2,
+							text: `You and I haven't\n
+been so close at school\n
+but we grew closer\n
+as we drifted apart from home.\n
+I love the little detail that\n
+we started flirting with memes\n
+and couldn't help but fall\n
+for each other ❤️\n
+this is one of the memes\n
+that started it all.`,
+							posX: 10,
+							posY: 360
 						}
 					]
 				},
@@ -57,19 +80,19 @@ class Scrapbook extends Component {
 					pageNo: 2,
 					images: [
 						{
-							id: 3,
-							image: imagePath(3)+'jpg',
-							posX: 150,
-							posY: 150,
-							rotation: -30,
-							scaleX: 0.1,
-							scaleY: 0.1
+							id: 1,
+							image: imagePath(22)+'jpg',
+							posX: 200,
+							posY: 10,
+							rotation: 90,
+							scaleX: 0.06,
+							scaleY: 0.06
 						},
 						{
-							id: 4,
-							image: imagePath(4)+'jpg',
-							posX: 150,
-							posY: 250,
+							id: 2,
+							image: imagePath(23)+'jpg',
+							posX: 10,
+							posY: 380,
 							rotation: -30,
 							scaleX: 0.1,
 							scaleY: 0.1
@@ -78,12 +101,396 @@ class Scrapbook extends Component {
 					texts: [
 						{
 							id: 1,
-							text: "World",
-							posX: 100,
-							posY: 200
+							text: `Went on a Date\n
+							with this\n
+							beautiful waman\n
+							😐 ❤️`,
+							posX: 210,
+							posY: 80
+						},
+						{
+							id: 2,
+							text: `It was a lovely afternoon\n
+with a lot of bad selfies 🤳🏼\n`,
+							posX: 180,
+							posY: 540
 						}
 					]
-				}
+				},
+				{
+					pageNo: 3,
+					images: [
+						{
+							id: 1,
+							image: imagePath(31)+'jpg',
+							posX: 380,
+							posY: 180,
+							rotation: 90,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+						{
+							id: 2,
+							image: imagePath(26)+'jpg',
+							posX: -10,
+							posY: 70,
+							rotation: 5,
+							scaleX: 0.06,
+							scaleY: 0.06
+						},
+						{
+							id: 3,
+							image: imagePath(16)+'jpg',
+							posX: -50,
+							posY: 330,
+							rotation: -10,
+							scaleX: 0.06,
+							scaleY: 0.06
+						},
+						{
+							id: 4,
+							image: imagePath(25)+'jpg',
+							posX: 130,
+							posY: 450,
+							rotation: 10,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `That one afternoon snowballed into a lot of happy memories\n
+and amazing moments that I'll always cherish in my heart ❤️`,
+							posX: 10,
+							posY: 10
+						}
+					]
+				},
+				{
+					pageNo: 4,
+					images: [
+						{
+							id: 1,
+							image: imagePath(4)+'jpg',
+							posX: 180,
+							posY: 180,
+							rotation: 0,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+						{
+							id: 2,
+							image: imagePath(12)+'jpg',
+							posX: -20,
+							posY: 70,
+							rotation: -10,
+							scaleX: 0.2,
+							scaleY: 0.2
+						},
+						{
+							id: 3,
+							image: imagePath(1)+'png',
+							posX: 20,
+							posY: 330,
+							rotation: 10,
+							scaleX: 0.2,
+							scaleY: 0.2
+						},
+						{
+							id: 4,
+							image: imagePath(5)+'jpg',
+							posX: 10,
+							posY: 470,
+							rotation: 0,
+							scaleX: 0.3,
+							scaleY: 0.3
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `We have an awesome friend group, who sometimes fills\n
+			in for me 🍻❤️`,
+							posX: 10,
+							posY: 10
+						}
+					]
+				},
+				{
+					pageNo: 5,
+					images: [
+						{
+							id: 1,
+							image: imagePath(27)+'jpg',
+							posX: -30,
+							posY: 80,
+							rotation: -10,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+						{
+							id: 2,
+							image: imagePath(32)+'jpg',
+							posX: 160,
+							posY: 380,
+							rotation: -90,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+						{
+							id: 3,
+							image: imagePath(9)+'jpg',
+							posX: -20,
+							posY: 360,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+						{
+							id: 4,
+							image: imagePath(10)+'jpg',
+							posX: 50,
+							posY: 500,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `Althrough you...\n
+							Laugh maniacally 👹`,
+							posX: 10,
+							posY: 10
+						},
+						{
+							id: 2,
+							text: `Cover me up\n
+							in pictures 📸`,
+							posX: 190,
+							posY: 50
+						},
+						{
+							id: 3,
+							text: `And try to steal\n
+my Happy Potter wand 🧙`,
+							posX: 10,
+							posY: 300
+						}
+					]
+				},
+				{
+					pageNo: 6,
+					images: [
+						{
+							id: 1,
+							image: imagePath(19)+'jpg',
+							posX: 50,
+							posY: 80,
+							rotation: 0,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+						{
+							id: 3,
+							image: imagePath(3)+'jpg',
+							posX: 10,
+							posY: 400,
+							rotation: 0,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `But I'll always love you exactly like this, till...\n
+well I don't ever want this to have an "until"\n
+I want this to have a forever ❤️`,
+							posX: 10,
+							posY: 10
+						},
+					]
+				},
+				{
+					pageNo: 7,
+					images: [
+						{
+							id: 1,
+							image: imagePath(30)+'jpg',
+							posX: 380,
+							posY: 160,
+							rotation: 90,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+						{
+							id: 2,
+							image: imagePath(17)+'jpg',
+							posX: -30,
+							posY: 80,
+							rotation: -10,
+							scaleX: 0.07,
+							scaleY: 0.07
+						},
+						{
+							id: 4,
+							image: imagePath(14)+'jpg',
+							posX: 10,
+							posY: 450,
+							rotation: 0,
+							scaleX: 0.05,
+							scaleY: 0.05
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `I love that we are that couple\n
+							who judges people together 😜`,
+							posX: 10,
+							posY: 10
+						},
+						{
+							id: 2,
+							text: `And gives each\n
+other chips 🍟\n
+because that's\n
+very important`,
+							posX: 10,
+							posY: 415
+						},
+					]
+				},
+				{
+					pageNo: 8,
+					images: [
+						{
+							id: 1,
+							image: imagePath(13)+'jpg',
+							posX: 10,
+							posY: 80,
+							rotation: 0,
+							scaleX: 0.06,
+							scaleY: 0.06
+						},
+						{
+							id: 4,
+							image: imagePath(33)+'jpg',
+							posX: 320,
+							posY: 600,
+							rotation: 180,
+							scaleX: 0.1,
+							scaleY: 0.1
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `I promise to protect you from all sorts of evil\n
+							(like child molester Sandy)`,
+							posX: 10,
+							posY: 30
+						},
+						{
+							id: 2,
+							text: `and give you fake rose candies\n
+because food is important 😐`,
+							posX: 10,
+							posY: 330
+						},
+					]
+				},
+				{
+					pageNo: 9,
+					images: [
+						{
+							id: 1,
+							image: imagePath(7)+'jpg',
+							posX: 0,
+							posY: 30,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+						{
+							id: 2,
+							image: imagePath(20)+'jpg',
+							posX: 90,
+							posY: 260,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+						{
+							id: 4,
+							image: imagePath(6)+'jpg',
+							posX: 10,
+							posY: 420,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+					],
+					texts: [
+						{
+							id: 1,
+							text: `I love my beautiful,`,
+							posX: 10,
+							posY: 10
+						},
+						{
+							id: 2,
+							text: `little,\n
+poet girlfriend 😚❤️`,
+							posX: 10,
+							posY: 370
+						},
+					]
+				},
+				{
+					pageNo: 10,
+					images: [
+						{
+							id: 1,
+							image: imagePath(15)+'jpg',
+							posX: 20,
+							posY: 110,
+							rotation: 0,
+							scaleX: 0.05,
+							scaleY: 0.05
+						},
+						{
+							id: 4,
+							image: imagePath(8)+'jpg',
+							posX: 50,
+							posY: 370,
+							rotation: 0,
+							scaleX: 0.25,
+							scaleY: 0.25
+						},
+					],
+					texts: [
+						{
+							id: 2,
+							text: `Here's me riding a horse coming to your rescue\n
+from boredom during this wretched lockdown of covid 19\n
+(Love in the time of Corona is the only gift,\n
+I really have for you 😐❤️)`,
+							posX: 30,
+							posY: 10
+						},
+						{
+							id: 1,
+							text: `Thank you for seeing my scrapbook\n
+Here have a poorly drawn Rushali to show my gratitude 😐`,
+							posX: 10,
+							posY: 320
+						},
+					]
+				},
 			]
 		};
 	}
@@ -93,7 +500,7 @@ class Scrapbook extends Component {
 	};
 
 	render() {
-		const paddingHorizontal = 32;
+		const paddingHorizontal = 18;
 		const paddingVertical = 4;
 
 		const width = isMobileDevice()

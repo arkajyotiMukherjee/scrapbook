@@ -15,8 +15,8 @@ const ScrapImage = ({ imageUrl, posX, posY, rotation, scaleX, scaleY }) => {
 			rotation={rotation}
 			scaleX={scaleX}
 			scaleY={scaleY}
-			offsetX={image ? image.width / 2 : 0}
-			offsetY={image ? image.height / 2 : 0}
+			// offsetX={image ? image.width / 2 : 0}
+			// offsetY={image ? image.height / 2 : 0}
 		/>
 	);
 };
